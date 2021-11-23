@@ -1,0 +1,37 @@
+.avatarProfile{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.nameProfile{
+    font-size: 20px;
+}
+
+.tag, .location{
+    font-size: 16px;
+    color:#808080;
+    margin-top: -8px;
+}
+
+.stats{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    background-color: #ececec;
+    width: 240px;
+    height: 70px;
+}
+
+.label-profile{
+    color: #808080;
+    display: flex;
+    margin: 10px 45px 5px -10px;
+    text-transform: capitalize;
+}
+
+.quantity{
+    color: #000000;
+    font-weight: 600;
+    margin: 15px 45px 0 -10px;
+}

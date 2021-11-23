@@ -1,0 +1,35 @@
+.stat-list{
+    list-style: none;
+    display: flex;
+}
+
+.title{
+    width: 300px;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+.itemStats{
+    width: 75px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin: -20px 40px 0 -40px;
+}
+
+.label-stats{
+    font-size: 12px;
+}
+
+.percentage{
+    margin-top: 5px;
+    font-size: 20px;
+}

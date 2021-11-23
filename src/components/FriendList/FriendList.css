@@ -1,0 +1,35 @@
+.status {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #17c700;
+  margin-left: 20px;
+}
+
+.statusOff {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  margin-left: 20px;
+}
+
+.avatarFriends{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 20px;
+}
+
+.name{
+    font-size: 36px;
+}
+
+.item{
+    width: 400px;
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 10px #292929;
+    margin: -50px 0 65px 0;
+}
