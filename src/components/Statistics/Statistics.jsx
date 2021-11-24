@@ -9,35 +9,11 @@ function RandomHexColor() {
 function Statistics({ title, stats }) {
   return (
     <section className="statistics">
-      <h2 className="title">{title}</h2>
+      {title.length > 0 && <h2 className="title">{title}</h2>}
 
       <ul className="stat-list">
         {stats
-          .filter((stats, id) => id === 0)
-          .map((stat) => (
-            <li className="itemStats" key={stat.id} style={{ backgroundColor: RandomHexColor() }}>
-              <span className="label-stats">{stat.label}</span>
-              <span className="percentage">{stat.percentage}%</span>
-            </li>
-          ))}
-        {stats
-          .filter((stats, id) => id === 1)
-          .map((stat) => (
-            <li className="itemStats" key={stat.id} style={{ backgroundColor: RandomHexColor() }}>
-              <span className="label-stats">{stat.label}</span>
-              <span className="percentage">{stat.percentage}%</span>
-            </li>
-          ))}
-        {stats
-          .filter((stats, id) => id === 2)
-          .map((stat) => (
-            <li className="itemStats" key={stat.id} style={{ backgroundColor: RandomHexColor() }}>
-              <span className="label-stats">{stat.label}</span>
-              <span className="percentage">{stat.percentage}%</span>
-            </li>
-          ))}
-        {stats
-          .filter((stats, id) => id === 3)
+          .filter((stats, id) => id < 4)
           .map((stat) => (
             <li className="itemStats" key={stat.id} style={{ backgroundColor: RandomHexColor() }}>
               <span className="label-stats">{stat.label}</span>

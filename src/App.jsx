@@ -1,17 +1,22 @@
 import "./App.css";
+// Task 1 - Profile on the social network
 import Profile from "./components/Profile/Profile";
-import Statistics from "./components/Statistics/Statistics";
-import FriendList from "./components/FriendList/FriendList";
-import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import User from "./components/Profile/user.json";
+// Task 2 - Statistics section
+import Statistics from "./components/Statistics/Statistics";
 import Data from "./components/Statistics/data.json";
+// Task 3 - Friend List
+import FriendList from "./components/FriendList/FriendList";
 import Friends from "./components/FriendList/friends.json";
+// Task 4 - Transaction history
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import Transactions from "./components/TransactionHistory/transactions.json";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
         <p className="TaskOne">Task 1 - Profile on the social network</p>
         <div className="Profile">
         <Profile

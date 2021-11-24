@@ -2,7 +2,7 @@ import React from "react";
 import "./TransactionHistory.css";
 import PropTypes from "prop-types";
 
-function TransactionHistory({ items }) {
+function TransactionHistory({ items}) {
   return (
     <table className="transaction-history">
       <thead>
@@ -18,7 +18,7 @@ function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items
+        {items 
           .filter((items, id) => id === 0)
           .map((item) => (
             <tr className="transaction" key={item.id}>
@@ -37,7 +37,7 @@ function TransactionHistory({ items }) {
             </tr>
           ))}
         {items
-          .filter((items, id) => id === 9)
+          .filter((items, id) => id === 4)
           .map((item) => (
             <tr className="transaction" key={item.id}>
               <td className="transaction-line">{item.type}</td>
@@ -55,7 +55,7 @@ function TransactionHistory({ items }) {
             </tr>
           ))}
         {items
-          .filter((items, id) => id === 4)
+          .filter((items, id) => id === 9)
           .map((item) => (
             <tr className="transaction" key={item.id}>
               <td className="transaction-line">{item.type}</td>
