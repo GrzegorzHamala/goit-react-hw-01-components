@@ -11,12 +11,12 @@ function Statistics({ title, stats }) {
     <section className="statistics">
       {title.length > 0 && <h2 className="title">{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className="statList">
         {stats
           .filter((stats, id) => id < 4)
           .map((stat) => (
             <li className="itemStats" key={stat.id} style={{ backgroundColor: RandomHexColor() }}>
-              <span className="label-stats">{stat.label}</span>
+              <span className="labelStats">{stat.label}</span>
               <span className="percentage">{stat.percentage}%</span>
             </li>
           ))}

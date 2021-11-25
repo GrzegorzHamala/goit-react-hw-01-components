@@ -1,4 +1,4 @@
-.stat-list{
+.statList{
     list-style: none;
     display: flex;
 }
@@ -25,11 +25,11 @@
     margin: -20px 40px 0 -40px;
 }
 
-.label-stats{
-    font-size: 12px;
+.labelStats{
+    font-size: 14px;
 }
 
 .percentage{
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 22px;
 }
