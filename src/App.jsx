@@ -1,16 +1,16 @@
 import "./App.css";
 // Task 1 - Profile on the social network
 import Profile from "./components/Profile/Profile";
-import User from "./components/Profile/user.json";
+import User from "./data/user.json";
 // Task 2 - Statistics section
 import Statistics from "./components/Statistics/Statistics";
-import Data from "./components/Statistics/data.json";
+import Data from "./data/data.json";
 // Task 3 - Friend List
 import FriendList from "./components/FriendList/FriendList";
-import Friends from "./components/FriendList/friends.json";
+import Friends from "./data/friends.json";
 // Task 4 - Transaction history
 import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
-import Transactions from "./components/TransactionHistory/transactions.json";
+import Transactions from "./data/transactions.json";
 
 function App() {
   return (

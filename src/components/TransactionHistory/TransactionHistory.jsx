@@ -18,13 +18,11 @@ function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items
-          .filter((items, id) => id < 5)
-          .map((item) => (
-            <tr className="transaction" key={item.id}>
-              <td className="transactionLine">{item.type}</td>
-              <td className="transactionLine">{item.amount}</td>
-              <td className="transactionLine">{item.currency}</td>
+        {items.map(({id, type, amount, currency}) => (
+            <tr className="transaction" key={id}>
+              <td className="transactionLine">{type}</td>
+              <td className="transactionLine">{amount}</td>
+              <td className="transactionLine">{currency}</td>
             </tr>
           ))}
       </tbody>
